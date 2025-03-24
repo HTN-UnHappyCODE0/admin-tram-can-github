@@ -1,0 +1,44 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.main_search {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.search {
+	min-width: 296px;
+}
+
+.filter {
+	min-width: 220px;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.image {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+}
+
+.link {
+	font-weight: 600;
+	color: var(--primary);
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.8;
+		text-decoration: underline;
+	}
+}
