@@ -736,7 +736,9 @@ function MainDryness({}: PropsMainDryness) {
 								render: (data: IWeightSession, index: number) => (
 									<div className={styles.valueDryness}>
 										<input
-											ref={(el) => (inputRefs.current[index] = el)}
+											ref={(el) => {
+												inputRefs.current[index] = el;
+											}}
 											tabIndex={index + 1}
 											className={styles.input}
 											type='number'
